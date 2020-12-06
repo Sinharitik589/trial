@@ -24,6 +24,6 @@ app.use("^/$", (req, res, next) => {
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
 app.listen(8000, () => {
-    console.log("Server started on 8000");
+    console.log(process.env.PORT);
 });
 
